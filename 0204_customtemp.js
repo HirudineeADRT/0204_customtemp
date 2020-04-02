@@ -22,6 +22,15 @@ exports.handler = async (event) => {
     } catch (err) {
         // error handling goes here
     };
+    try {
+        let data = await s3.listObjects({
+            Bucket: "lkjo",
+            MaxKeys: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
 
 
 
