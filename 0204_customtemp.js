@@ -24,13 +24,14 @@ exports.handler = async (event) => {
     };
     try {
         let data = await s3.listObjects({
-            Bucket: "lkjo",
+            Bucket: "btbucket.images",
             MaxKeys: 10
         }).promise();
 
     } catch (err) {
         // error handling goes here
     };
+
 
 
 

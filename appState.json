@@ -461,6 +461,17 @@
             "name": "lkjo"
           }
         }
+      },
+      "s3btbucketimages": {
+        "name": "s3btbucketimages",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "btbucket.images"
+          }
+        }
       }
     },
     "customTemplate": {
@@ -593,7 +604,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585820771686
+    "lastSave": 1585820909580
   },
   "VCS_STATE": {
     "provider": "GitHub",
